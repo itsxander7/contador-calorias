@@ -46,7 +46,6 @@ export default function Activity({activities, dispatch} : ActivityListProps) {
             >
               <XCircleIcon
               className="h-8 w-8 text-red-800"/>
-
             </button>
 
           </div>
