@@ -14,8 +14,9 @@ function App() {
   const canRestarApp = () => useMemo(()=> state.activities.length , [state.activities])
 
   return (
-    <>
-      <header className="bg-gray-700 py-5">
+    < >
+      <section className=' bg-lime-600'>
+      <header className="bg-gray-800 py-5">
         <div className="max-w-5xl mx-auto flex justify-between">
           <h1 className="text-center text-lg font-bold text-white uppercase">
             Contador de Calorias
@@ -30,7 +31,7 @@ function App() {
 
         </div>
       </header>
-      <section className="bg-lime-600 py-20 px-5">
+      <section className="px-5 py-10 ">
         <div className="max-w-5xl mx-auto">
           <Form 
           dispatch={dispatch} 
@@ -51,6 +52,7 @@ function App() {
         activities = {state.activities}
         dispatch = {dispatch}
         />
+      </section>
       </section>
     </>
   );

@@ -18,7 +18,7 @@ export default function Activity({activities, dispatch} : ActivityListProps) {
   return (
     
     <>
-    <h2 className="text-4xl font-bold  text-gray-700 text-center"> Comida y Actividades
+    <h2 className="text-4xl font-bold  text-gray-700 text-center py-3"> Comida y Actividades
     </h2>
     { isEmptyActivities ? <p className="text-center my-5">Aun no hay actividades... </p> :     
       activities.map(activity =>( 
