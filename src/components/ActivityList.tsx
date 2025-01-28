@@ -24,7 +24,7 @@ export default function Activity({activities, dispatch} : ActivityListProps) {
       activities.map(activity =>( 
       <div key={activity.id} className="px-5 py-10 bg-white flex justify-between shadow">
           <div className=" space-y-2 relative">
-            <p className={`absolute -top-8 -left-8 px-10 py-2 text-white uppercase font-bold ${activity.category === 1 ? 'bg-orange-400' : 'bg-lime-500'}`}>
+            <p className={`absolute -top-8 -left-8 px-10 py-2 text-white uppercase font-bold ${activity.category === 1 ? 'bg-orange-400' : 'bg-orange-400'}`}>
               {categoryName (+activity.category)}</p>
             <p className="text-2xl font-bold pt-5">{activity.name}</p>
             <p className= {`font-black text-4xl ${activity.category === 1 ? 'text-orange-400' : ' text-lime-500'}`}> {activity.calories}
